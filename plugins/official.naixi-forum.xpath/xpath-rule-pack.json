@@ -20,7 +20,8 @@
         "content": null,
         "detailContent": "//*[@id='postlist']//td[contains(@class, 't_f') and starts-with(@id, 'postmessage_')][1]",
         "image": ".//a[contains(@class, 'kmimg')]//img/@src",
-        "nextPage": "//a[contains(@class, 'nxt')]/@href"
+        "nextPage": "//a[contains(@class, 'nxt')]/@href",
+        "maxItems": 20
       }
     }
   ],
@@ -82,6 +83,9 @@
         "path": ["板块", "站务区", "反馈"],
         "url": "https://forum.naixi.net/forum-63-1.html"
       }
-    ]
+    ],
+    "defaults": {
+      "maxItems": 20
+    }
   }
 }
