@@ -3,23 +3,22 @@
   "id": "official.naixi-forum.xpath",
   "name": "Naixi Forum XPath Rules",
   "version": "0.1.0",
-  "description": "Static XPath and AI prompt rules for naixi.net Discuz forum thread lists with section-based browsing.",
+  "description": "Static XPath rules for naixi.net forum thread lists with section-based browsing.",
   "candidates": [
     {
       "id": "naixi-forum-thread-list",
       "pageType": "forum-thread-list",
       "priority": 90,
-      "detect": ["threadlisttableid", "normalthread_", "forum.naixi.net"],
-      "promptRule": "- Naixi/Discuz forum thread list: prefer items `//tbody[contains(@id, 'normalthread_')]`, title `.//a[contains(@class, 'xst')]`, url `.//a[contains(@class, 'xst')]/@href`, author `.//cite/a[1]`, date `.//em/span/@title` or `.//em/span[1]`, next page `//a[contains(@class, 'nxt')]/@href`.",
+      "detect": ["threadlisttableid", "kmlist", "km_subject"],
       "selectors": {
-        "items": "//tbody[contains(@id, 'normalthread_')]",
-        "title": ".//a[contains(@class, 'xst')]",
-        "url": ".//a[contains(@class, 'xst')]/@href",
-        "summary": ".//th[contains(@class, 'new')]/following-sibling::td[1]//div[@class='threadabstract']",
-        "publishedAt": ".//em/span/@title",
-        "author": ".//cite/a[1]",
+        "items": "//*[@id='threadlisttableid']/li[contains(@class, 'kmlist')]",
+        "title": ".//*[contains(@class, 'km_subject')]",
+        "url": ".//a[contains(@class, 'kmtit')]/@href",
+        "summary": ".//*[contains(@class, 'kmfoot')]",
+        "publishedAt": ".//*[contains(@class, 'kmtime')]/*[@title][1]/@title | .//*[contains(@class, 'kmtime')]",
+        "author": ".//*[contains(@class, 'kmfoot')]/a[starts-with(@href, 'space-uid')][1]",
         "content": null,
-        "image": ".//img[contains(@class, 'kmimg')]/@src",
+        "image": ".//a[contains(@class, 'kmimg')]//img/@src",
         "nextPage": "//a[contains(@class, 'nxt')]/@href"
       }
     }
@@ -82,10 +81,6 @@
         "path": ["板块", "站务区", "反馈"],
         "url": "https://forum.naixi.net/forum-63-1.html"
       }
-    ],
-    "defaults": {
-      "maxItems": 20,
-      "maxPages": 3
-    }
+    ]
   }
 }

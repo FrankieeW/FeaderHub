@@ -8,7 +8,7 @@
       "version": "0.1.0",
       "kind": "static-xpath-rule-pack",
       "manifest": "plugins/official.naixi-forum.xpath/manifest.json",
-      "sha256": "d1530c9597140cf136f16c97b5d795605787c9f2fceb5437c16c60855687bbf7"
+      "sha256": "eaa3c954e16d30a9eb577be6b0969ce25977f1a2b7bcc3ba163c0ea7987f54ec"
     }
   ]
 }
