@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.weibo-user-feed.xpath",
+  "name": "Weibo User Feed",
+  "version": "0.1.0",
+  "kind": "json-api-feed",
+  "feaderApiVersion": "json-api-feed/v1",
+  "description": "Fetch Weibo user timeline via m.weibo.cn JSON API with JSON-path field extraction.",
+  "logo": "https://m.weibo.cn/favicon.ico",
+  "entry": "xpath-rule-pack.json",
+  "permissions": {
+    "network": ["m.weibo.cn", "sinaimg.cn", "weibo.com"],
+    "credentials": ["cookie"],
+    "execution": "none"
+  },
+  "authors": [
+    {
+      "name": "Frankie Wang",
+      "githubId": "FrankieeW"
+    }
+  ],
+  "sha256": "6797fd5e7aeaae5947616437ca7daa67a500c533dd0a5d649f826856fbfd4469"
+}

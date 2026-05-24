@@ -9,6 +9,14 @@
       "kind": "static-xpath-rule-pack",
       "manifest": "plugins/official.naixi-forum.xpath/manifest.json",
       "sha256": "a3da6743464ab76d5d60a6bbb519608680edda436ed306acd40a0d916607c85a"
+    },
+    {
+      "id": "official.weibo-user-feed.xpath",
+      "name": "Weibo User Feed",
+      "version": "0.1.0",
+      "kind": "json-api-feed",
+      "manifest": "plugins/official.weibo-user-feed.xpath/manifest.json",
+      "sha256": "cbf544430f2072366193b2e5716adbec309a10f1ac5aada222cb2f2c845b50d3"
     }
   ]
 }
