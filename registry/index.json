@@ -1,6 +1,6 @@
 {
   "schemaVersion": "feader-registry/v1",
-  "updatedAt": "2026-05-24T00:00:00Z",
+  "updatedAt": "2026-05-26T00:00:00Z",
   "plugins": [
     {
       "id": "official.naixi-forum.xpath",
@@ -16,7 +16,7 @@
       "version": "0.1.0",
       "kind": "json-api-feed",
       "manifest": "plugins/official.weibo-user-feed.xpath/manifest.json",
-      "sha256": "0972f7933e2ab6c6ae781250b46be505bdf0b05c8c219ac01a0441b27ea73740"
+      "sha256": "e0f84ed3b43f547f4f935465e3b97406c23da1233b110bfe36f31e4345604910"
     }
   ]
 }

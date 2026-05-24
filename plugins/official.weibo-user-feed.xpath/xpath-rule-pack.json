@@ -38,19 +38,19 @@
       "promptRule": "Weibo user feed: JSON API on m.weibo.cn. Items are mblog objects under data.cards where card_type==9. Each mblog has text (HTML body), user.screen_name, created_at, reposts_count, comments_count, attitudes_count, pics[] with large.url, bid for constructing weibo.com links. Pagination via data.cardlistInfo.since_id cursor.",
       "selectors": {
         "items": "data.cards[?(@.card_type==9)]",
-        "title": "user.screen_name",
-        "url": "https://weibo.com/{user.id}/{bid}",
-        "summary": "text",
-        "publishedAt": "created_at",
-        "author": "user.screen_name",
-        "image": "pics[0].large.url",
-        "content": "text",
+        "title": "mblog.user.screen_name",
+        "url": "https://weibo.com/{mblog.user.id}/{mblog.bid}",
+        "summary": "mblog.text",
+        "publishedAt": "mblog.created_at",
+        "author": "mblog.user.screen_name",
+        "image": "mblog.pics[0].large.url",
+        "content": "mblog.text",
         "nextPage": "data.cardlistInfo.since_id",
         "customFields": [
-          { "key": "reposts", "label": "转发", "xpath": "reposts_count", "scope": "item" },
-          { "key": "comments", "label": "评论", "xpath": "comments_count", "scope": "item" },
-          { "key": "likes", "label": "点赞", "xpath": "attitudes_count", "scope": "item" },
-          { "key": "source", "label": "来源", "xpath": "source", "scope": "item" }
+          { "key": "reposts", "label": "转发", "xpath": "mblog.reposts_count", "scope": "item" },
+          { "key": "comments", "label": "评论", "xpath": "mblog.comments_count", "scope": "item" },
+          { "key": "likes", "label": "点赞", "xpath": "mblog.attitudes_count", "scope": "item" },
+          { "key": "source", "label": "来源", "xpath": "mblog.source", "scope": "item" }
         ],
         "maxItems": 40
       }
