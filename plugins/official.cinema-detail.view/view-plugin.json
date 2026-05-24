@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.cinema-detail.view",
+  "name": "Cinema Detail View",
+  "version": "0.1.0",
+  "slot": "detail-view",
+  "description": "A cinematic detail renderer template that treats hero imagery and embedded video as first-class reading context.",
+  "capabilities": [
+    "detail.view",
+    "detail.heroMedia",
+    "detail.immersiveReading"
+  ],
+  "tokens": {
+    "maxWidth": "960px",
+    "titleMaxWidth": "18ch",
+    "heroAspectRatio": "21 / 9",
+    "bodyWidth": "66ch",
+    "mediaRadius": "8px",
+    "metadataMode": "sidecar"
+  },
+  "layout": {
+    "readingMode": "immersive",
+    "mediaPriority": "hero-first",
+    "metadataPlacement": "right-rail",
+    "bodyRhythm": "feature"
+  },
+  "preview": {
+    "title": "Cinema detail",
+    "description": "Good default for image-heavy articles, videos, reviews, and long visual posts.",
+    "sampleData": [
+      {
+        "title": "Feature story with hero media",
+        "body": "Readable long-form copy with a prominent visual lead."
+      }
+    ]
+  }
+}

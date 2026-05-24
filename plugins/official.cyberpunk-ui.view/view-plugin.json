@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.cyberpunk-ui.view",
+  "name": "Cyberpunk UI Theme",
+  "version": "0.1.0",
+  "slot": "app-ui",
+  "description": "Neon operational chrome for the entire Feader app shell.",
+  "capabilities": [
+    "app.theme",
+    "app.chrome",
+    "settings.toggle"
+  ],
+  "tokens": {
+    "colorBg": "#070812",
+    "colorBgAccent": "rgba(0, 245, 255, 0.16)",
+    "colorPanel": "rgba(12, 18, 35, 0.92)",
+    "colorPanelStrong": "#11162d",
+    "colorPanelSoft": "rgba(20, 30, 58, 0.76)",
+    "colorHeading": "#f6fbff",
+    "colorText": "#cfecff",
+    "colorMuted": "#8ea9c9",
+    "colorBorder": "#263b66",
+    "colorBrand": "#00f5ff",
+    "colorAction": "#ff3df2",
+    "colorActionHover": "#ff73f7",
+    "colorSuccess": "#55ff9a",
+    "shadowPanel": "0 22px 60px rgba(0, 245, 255, 0.16)"
+  },
+  "layout": {
+    "density": "comfortable",
+    "radius": "sharp",
+    "motion": "electric"
+  },
+  "preview": {
+    "title": "Cyberpunk control desk",
+    "description": "Dark neon shell with cyan-magenta action colors for high-contrast source work.",
+    "sampleData": [
+      {
+        "label": "Sources",
+        "value": 12
+      },
+      {
+        "label": "Unread",
+        "value": 48
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.cyberpunk-ui.view",
+  "name": "Cyberpunk UI Theme",
+  "version": "0.1.0",
+  "kind": "app-ui-theme",
+  "feaderApiVersion": "feader-view-plugin/v1",
+  "description": "Official app-wide cyberpunk theme template for Feader view plugin authors.",
+  "entry": "view-plugin.json",
+  "permissions": {
+    "network": [],
+    "credentials": [],
+    "execution": "none"
+  },
+  "maintainers": [
+    "Feader Core"
+  ],
+  "authors": [
+    {
+      "name": "Feader Core"
+    }
+  ],
+  "logo": null,
+  "sha256": "4290dfe0f69154ed41066b9ac1b392a5ced4dc308c71870c1d06fc5665dc068e"
+}

@@ -19,7 +19,14 @@
     "name": { "type": "string" },
     "version": { "type": "string" },
     "kind": {
-      "enum": ["static-xpath-rule-pack", "advanced-source-plugin", "json-api-feed"]
+      "enum": [
+        "static-xpath-rule-pack",
+        "advanced-source-plugin",
+        "json-api-feed",
+        "app-ui-theme",
+        "source-list-view",
+        "detail-view"
+      ]
     },
     "feaderApiVersion": { "type": "string" },
     "description": { "type": "string" },

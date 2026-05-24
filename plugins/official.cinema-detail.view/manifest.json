@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.cinema-detail.view",
+  "name": "Cinema Detail View",
+  "version": "0.1.0",
+  "kind": "detail-view",
+  "feaderApiVersion": "feader-view-plugin/v1",
+  "description": "Official immersive article detail template with cinematic media emphasis.",
+  "entry": "view-plugin.json",
+  "permissions": {
+    "network": [],
+    "credentials": [],
+    "execution": "none"
+  },
+  "maintainers": [
+    "Feader Core"
+  ],
+  "authors": [
+    {
+      "name": "Feader Core"
+    }
+  ],
+  "logo": null,
+  "sha256": "a89adf5b04a732dd46e4f908f7bf6c7bb8782125aca8155c71888a4af2b93b7f"
+}

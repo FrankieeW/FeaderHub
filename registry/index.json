@@ -17,6 +17,30 @@
       "kind": "json-api-feed",
       "manifest": "plugins/official.weibo-user-feed.xpath/manifest.json",
       "sha256": "e0f84ed3b43f547f4f935465e3b97406c23da1233b110bfe36f31e4345604910"
+    },
+    {
+      "id": "official.cyberpunk-ui.view",
+      "name": "Cyberpunk UI Theme",
+      "version": "0.1.0",
+      "kind": "app-ui-theme",
+      "manifest": "plugins/official.cyberpunk-ui.view/manifest.json",
+      "sha256": "4290dfe0f69154ed41066b9ac1b392a5ced4dc308c71870c1d06fc5665dc068e"
+    },
+    {
+      "id": "official.social-source-list.view",
+      "name": "Social Source List View",
+      "version": "0.1.0",
+      "kind": "source-list-view",
+      "manifest": "plugins/official.social-source-list.view/manifest.json",
+      "sha256": "b7b68b42c7df2539449a4888ea9696560e6f4726b1bf071173b879e91ed578be"
+    },
+    {
+      "id": "official.cinema-detail.view",
+      "name": "Cinema Detail View",
+      "version": "0.1.0",
+      "kind": "detail-view",
+      "manifest": "plugins/official.cinema-detail.view/manifest.json",
+      "sha256": "a89adf5b04a732dd46e4f908f7bf6c7bb8782125aca8155c71888a4af2b93b7f"
     }
   ]
 }

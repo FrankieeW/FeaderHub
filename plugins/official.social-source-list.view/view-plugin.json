@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.social-source-list.view",
+  "name": "Social Source List View",
+  "version": "0.1.0",
+  "slot": "source-list",
+  "description": "A social-post style source queue with avatars, compact metadata, and conversational spacing.",
+  "capabilities": [
+    "sourceList.view",
+    "sourceList.avatar",
+    "sourceList.socialMetadata"
+  ],
+  "tokens": {
+    "avatarShape": "circle",
+    "cardBorder": "1px solid var(--color-border)",
+    "cardPadding": "14px",
+    "gap": "10px",
+    "sourceInitials": true,
+    "summaryLines": 2
+  },
+  "layout": {
+    "templateColumns": "42px minmax(0, 1fr)",
+    "areas": [
+      "avatar state",
+      "avatar meta",
+      "avatar title",
+      "avatar summary",
+      "avatar fields",
+      "avatar actions"
+    ],
+    "interaction": "post-card"
+  },
+  "preview": {
+    "title": "Social stream",
+    "description": "Best for Weibo, forums, Mastodon-like feeds, and frequent short posts.",
+    "sampleData": [
+      {
+        "sourceTitle": "Weibo",
+        "title": "New post from followed account",
+        "summary": "Short update with fast metadata scanning."
+      }
+    ]
+  }
+}
