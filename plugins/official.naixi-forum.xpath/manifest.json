@@ -6,6 +6,7 @@
   "kind": "static-xpath-rule-pack",
   "feaderApiVersion": "xpath-rule-pack/v1",
   "description": "Static XPath rules for naixi.net forum thread lists with section-based source creation.",
+  "logo": "https://s.naixi.net/favicon.ico",
   "entry": "xpath-rule-pack.json",
   "permissions": {
     "network": ["forum.naixi.net"],

@@ -23,6 +23,7 @@
     },
     "feaderApiVersion": { "type": "string" },
     "description": { "type": "string" },
+    "logo": { "type": "string", "format": "uri" },
     "entry": { "type": "string" },
     "permissions": {
       "type": "object",
@@ -38,6 +39,22 @@
         "execution": { "enum": ["none", "sandboxed"] }
       },
       "additionalProperties": false
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "evmAddress": { "type": "string" },
+          "avatarUrl": { "type": "string", "format": "uri" },
+          "website": { "type": "string", "format": "uri" },
+          "email": { "type": "string" },
+          "githubId": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
     },
     "maintainers": {
       "type": "array",
