@@ -12,7 +12,14 @@
     "credentials": [],
     "execution": "none"
   },
-  "maintainers": ["Feader Core"],
+  "maintainers": [
+    "Feader Core"
+  ],
   "sha256": "d94b1841ba9011a9b958bf293772c3f39b95b9f3cf079cda5ffdc977c951f3bc",
-  "signature": "TODO"
+  "authors": [
+    {
+      "name": "Feader Core"
+    }
+  ],
+  "logo": null
 }

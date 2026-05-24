@@ -23,6 +23,33 @@
       "type": "object",
       "properties": {
         "urlTemplate": { "type": "string" },
+        "params": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "label", "type", "required"],
+            "properties": {
+              "key": { "type": "string" },
+              "label": { "type": "string" },
+              "type": { "enum": ["select", "text", "number"] },
+              "placeholder": { "type": "string" },
+              "options": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["value", "label"],
+                  "properties": {
+                    "value": { "type": "string" },
+                    "label": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "required": { "type": "boolean" }
+            },
+            "additionalProperties": false
+          }
+        },
         "sections": {
           "type": "array",
           "items": {
@@ -54,7 +81,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "pageType", "priority", "detect", "promptRule", "selectors"],
+        "required": ["id", "pageType", "priority", "detect", "selectors"],
         "properties": {
           "id": { "type": "string" },
           "pageType": { "type": "string" },
@@ -63,7 +90,7 @@
             "type": "array",
             "items": { "type": "string" }
           },
-          "promptRule": { "type": "string" },
+          "promptRule": { "type": "string", "default": "" },
           "selectors": {
             "type": "object",
             "required": ["items", "title", "url"],
@@ -74,29 +101,58 @@
               "summary": { "type": ["string", "null"] },
               "publishedAt": { "type": ["string", "null"] },
               "author": { "type": ["string", "null"] },
+              "cookie": { "type": ["string", "null"] },
               "content": { "type": ["string", "null"] },
-              "image": { "type": ["string", "null"] },
-              "nextPage": { "type": ["string", "null"] }
-            },
-            "reader": {
-              "type": "object",
-              "properties": {
-                "removeSelectors": { "type": "array", "items": { "type": "string" } },
-                "resolveRelativeUrls": { "type": "boolean" },
-                "rewriteLinks": { "type": "boolean" },
-                "showCustomFields": { "type": "boolean" },
-                "layout": {
+              "detailContent": { "type": ["string", "null"] },
+              "contentCleanup": {
+                "type": "array",
+                "items": {
                   "type": "object",
+                  "required": ["pattern"],
                   "properties": {
-                    "typography": { "enum": ["system", "serif", "large"] },
-                    "width": { "enum": ["narrow", "normal", "wide"] },
-                    "immersive": { "type": "boolean" }
+                    "pattern": { "type": "string" },
+                    "replacement": { "type": "string", "default": "" }
                   },
                   "additionalProperties": false
-                },
-                "css": { "type": "string" }
+                }
               },
-              "additionalProperties": false
+              "image": { "type": ["string", "null"] },
+              "nextPage": { "type": ["string", "null"] },
+              "customFields": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["key", "label", "xpath", "scope"],
+                  "properties": {
+                    "key": { "type": "string" },
+                    "label": { "type": "string" },
+                    "xpath": { "type": "string" },
+                    "scope": { "enum": ["item", "detail"] }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "maxItems": { "type": "integer" },
+              "reader": {
+                "type": "object",
+                "properties": {
+                  "removeSelectors": { "type": "array", "items": { "type": "string" } },
+                  "resolveRelativeUrls": { "type": "boolean" },
+                  "rewriteLinks": { "type": "boolean" },
+                  "showCustomFields": { "type": "boolean" },
+                  "layout": {
+                    "type": "object",
+                    "properties": {
+                      "typography": { "enum": ["system", "serif", "large"] },
+                      "width": { "enum": ["narrow", "normal", "wide"] },
+                      "immersive": { "type": "boolean" }
+                    },
+                    "additionalProperties": false
+                  },
+                  "css": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
             },
             "additionalProperties": false
           }
