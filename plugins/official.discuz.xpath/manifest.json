@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.discuz.xpath",
+  "name": "Discuz XPath Rules",
+  "version": "0.1.0",
+  "kind": "static-xpath-rule-pack",
+  "feaderApiVersion": "xpath-rule-pack/v1",
+  "description": "Static XPath and AI prompt rules for Discuz-style forum thread lists.",
+  "entry": "xpath-rule-pack.json",
+  "permissions": {
+    "network": [],
+    "credentials": [],
+    "execution": "none"
+  },
+  "maintainers": ["Feader Core"],
+  "sha256": "d551c5d7a65b4bbe2b3e731aab6b61b1de9ebc5fb1161af01500e2c570b83494",
+  "signature": "TODO"
+}

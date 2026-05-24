@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "xpath-rule-pack/v1",
+  "id": "official.discuz.xpath",
+  "name": "Discuz XPath Rules",
+  "version": "0.1.0",
+  "description": "Static XPath and AI prompt rules for Discuz-style forum thread lists.",
+  "candidates": [
+    {
+      "id": "discuz-thread-list",
+      "pageType": "forum-thread-list",
+      "priority": 90,
+      "detect": ["threadlisttableid", "km_subject", "discuz"],
+      "promptRule": "- Discuz/forum thread list: prefer items `//ul[@id='threadlisttableid']/li[contains(concat(' ', normalize-space(@class), ' '), ' kmlist ')]`, title `.//*[contains(concat(' ', normalize-space(@class), ' '), ' km_subject ')]`, url `.//a[contains(concat(' ', normalize-space(@class), ' '), ' kmtit ')]/@href`, author from the first `space-uid` link inside `.kminfo`, date from `.kmtime/*[@title]/@title`, next page from `.nxt/@href`.",
+      "selectors": {
+        "items": "//ul[@id='threadlisttableid']/li[contains(concat(' ', normalize-space(@class), ' '), ' kmlist ')]",
+        "title": ".//*[contains(concat(' ', normalize-space(@class), ' '), ' km_subject ')]",
+        "url": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' kmtit ')]/@href",
+        "summary": ".//*[contains(concat(' ', normalize-space(@class), ' '), ' kminfo ')]",
+        "publishedAt": ".//*[contains(concat(' ', normalize-space(@class), ' '), ' kmtime ')]/*[@title][1]/@title",
+        "author": ".//div[contains(concat(' ', normalize-space(@class), ' '), ' kminfo ')]/a[starts-with(@href, 'space-uid')][1]",
+        "content": null,
+        "image": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' kmimg ')]//img/@src",
+        "nextPage": "//a[contains(concat(' ', normalize-space(@class), ' '), ' nxt ')]/@href"
+      }
+    }
+  ]
+}

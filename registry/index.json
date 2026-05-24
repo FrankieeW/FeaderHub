@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "feader-registry/v1",
+  "updatedAt": "2026-05-24T00:00:00Z",
+  "plugins": [
+    {
+      "id": "official.discuz.xpath",
+      "name": "Discuz XPath Rules",
+      "version": "0.1.0",
+      "kind": "static-xpath-rule-pack",
+      "manifest": "plugins/official.discuz.xpath/manifest.json",
+      "sha256": "33943d2f926105e6951108df11ee8844f0ee6c5f4e5d5ad522eea694e2c8307e"
+    },
+    {
+      "id": "official.maccms.xpath",
+      "name": "MacCMS XPath Rules",
+      "version": "0.1.0",
+      "kind": "static-xpath-rule-pack",
+      "manifest": "plugins/official.maccms.xpath/manifest.json",
+      "sha256": "5971700c11b2382502b41e581b457a24a2fabecc2b4e1fb44e6680b57c415131"
+    },
+    {
+      "id": "official.generic-html.xpath",
+      "name": "Generic HTML XPath Rules",
+      "version": "0.1.0",
+      "kind": "static-xpath-rule-pack",
+      "manifest": "plugins/official.generic-html.xpath/manifest.json",
+      "sha256": "19ae52830a3549cfe375db8ee240a91c0fc99022046ab73601430c74de870813"
+    }
+  ]
+}

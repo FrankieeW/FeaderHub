@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.generic-html.xpath",
+  "name": "Generic HTML XPath Rules",
+  "version": "0.1.0",
+  "kind": "static-xpath-rule-pack",
+  "feaderApiVersion": "xpath-rule-pack/v1",
+  "description": "Fallback static XPath and AI prompt rules for generic article listings.",
+  "entry": "xpath-rule-pack.json",
+  "permissions": {
+    "network": [],
+    "credentials": [],
+    "execution": "none"
+  },
+  "maintainers": ["Feader Core"],
+  "sha256": "423372a88c052392f29189ba787db1fa4e9e8ec7c604aff4100eb79fbc95aeaa",
+  "signature": "TODO"
+}

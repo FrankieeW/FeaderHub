@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://feader.app/schemas/xpath-rule-pack.schema.json",
+  "title": "Feader XPath Rule Pack",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "version", "candidates"],
+  "properties": {
+    "schemaVersion": { "const": "xpath-rule-pack/v1" },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "pageType", "priority", "detect", "promptRule", "selectors"],
+        "properties": {
+          "id": { "type": "string" },
+          "pageType": { "type": "string" },
+          "priority": { "type": "integer" },
+          "detect": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "promptRule": { "type": "string" },
+          "selectors": {
+            "type": "object",
+            "required": ["items", "title", "url"],
+            "properties": {
+              "items": { "type": "string" },
+              "title": { "type": "string" },
+              "url": { "type": "string" },
+              "summary": { "type": ["string", "null"] },
+              "publishedAt": { "type": ["string", "null"] },
+              "author": { "type": ["string", "null"] },
+              "content": { "type": ["string", "null"] },
+              "image": { "type": ["string", "null"] },
+              "nextPage": { "type": ["string", "null"] }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

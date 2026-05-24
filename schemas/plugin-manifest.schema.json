@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://feader.app/schemas/plugin-manifest.schema.json",
+  "title": "Feader Plugin Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "name",
+    "version",
+    "kind",
+    "feaderApiVersion",
+    "entry",
+    "permissions"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "feader-plugin/v1" },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "kind": {
+      "enum": ["static-xpath-rule-pack", "advanced-source-plugin"]
+    },
+    "feaderApiVersion": { "type": "string" },
+    "description": { "type": "string" },
+    "entry": { "type": "string" },
+    "permissions": {
+      "type": "object",
+      "properties": {
+        "network": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "credentials": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "execution": { "enum": ["none", "sandboxed"] }
+      },
+      "additionalProperties": false
+    },
+    "maintainers": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sha256": { "type": "string" },
+    "signature": { "type": "string" }
+  },
+  "additionalProperties": false
+}

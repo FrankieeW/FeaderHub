@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "xpath-rule-pack/v1",
+  "id": "official.maccms.xpath",
+  "name": "MacCMS XPath Rules",
+  "version": "0.1.0",
+  "description": "Static XPath and AI prompt rules for MacCMS video list and detail pages.",
+  "candidates": [
+    {
+      "id": "maccms-video-list",
+      "pageType": "video-list",
+      "priority": 80,
+      "detect": ["vodlist_item", "maccms", "vod/detail"],
+      "promptRule": "- MacCMS/video listing: prefer `//li[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_item ')]` with title under `.vodlist_title`, url/image from `.vodlist_thumb` href/data-original, summary from `.vodlist_sub`.",
+      "selectors": {
+        "items": "//li[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_item ')]",
+        "title": ".//*[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_title ')]//a[1]",
+        "url": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_thumb ')]/@href",
+        "summary": ".//*[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_sub ')]",
+        "publishedAt": null,
+        "author": null,
+        "content": null,
+        "image": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_thumb ')]/@data-original",
+        "nextPage": "//a[contains(concat(' ', normalize-space(@class), ' '), ' page-link ') and contains(., '下一')]/@href"
+      }
+    },
+    {
+      "id": "maccms-video-detail",
+      "pageType": "video-detail",
+      "priority": 85,
+      "detect": ["detail_list_box", "btn_primary", "vodlist_thumb"],
+      "promptRule": "- MacCMS/video detail page: a valid single-item source may use the first `.detail_list_box .content_box`, title from `h2.title`, url from `.btn_primary/@href`, image from `.vodlist_thumb/@data-original`, summary/content from `.desc`.",
+      "selectors": {
+        "items": "//div[contains(concat(' ', normalize-space(@class), ' '), ' detail_list_box ')]//div[contains(concat(' ', normalize-space(@class), ' '), ' content_box ')][1]",
+        "title": ".//h2[contains(concat(' ', normalize-space(@class), ' '), ' title ')]",
+        "url": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' btn_primary ')]/@href",
+        "summary": ".//li[contains(concat(' ', normalize-space(@class), ' '), ' desc ')]",
+        "publishedAt": ".//li[contains(concat(' ', normalize-space(@class), ' '), ' data ')]/em[1]",
+        "author": ".//li[contains(concat(' ', normalize-space(@class), ' '), ' data ')][span[contains(., '主演')]]/a[1]",
+        "content": ".//li[contains(concat(' ', normalize-space(@class), ' '), ' desc ')]",
+        "image": ".//a[contains(concat(' ', normalize-space(@class), ' '), ' vodlist_thumb ')]/@data-original",
+        "nextPage": null
+      }
+    }
+  ]
+}

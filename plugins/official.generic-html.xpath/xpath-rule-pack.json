@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "xpath-rule-pack/v1",
+  "id": "official.generic-html.xpath",
+  "name": "Generic HTML XPath Rules",
+  "version": "0.1.0",
+  "description": "Fallback static XPath and AI prompt rules for generic article listings.",
+  "candidates": [
+    {
+      "id": "generic-article-list",
+      "pageType": "article-list",
+      "priority": 10,
+      "detect": [],
+      "promptRule": "- Generic listing: first identify the smallest repeated node that contains one stable title link. Avoid navigation, footer, sidebar, ad, and ranking widgets unless the whole page is a ranking source.",
+      "selectors": {
+        "items": "//article",
+        "title": ".//h1 | .//h2 | .//h3 | .//a[normalize-space()][1]",
+        "url": ".//a[@href][1]/@href",
+        "summary": ".//p[normalize-space()][1]",
+        "publishedAt": ".//time/@datetime | .//time",
+        "author": ".//*[contains(@class, 'author')][1]",
+        "content": ".",
+        "image": ".//img[@src][1]/@src",
+        "nextPage": "//a[@rel='next']/@href | //a[contains(@class, 'next')]/@href"
+      }
+    }
+  ]
+}
