@@ -19,8 +19,38 @@
         "author": ".//*[contains(@class, 'kmfoot')]/a[starts-with(@href, 'space-uid')][1]",
         "content": null,
         "detailContent": "//*[@id='postlist']//td[contains(@class, 't_f') and starts-with(@id, 'postmessage_')][1]",
+        "contentCleanup": [
+          {
+            "pattern": "(?is)<div\\s+class=\"quote\".*?</div>",
+            "replacement": ""
+          },
+          {
+            "pattern": "(?is)<ignore_js_op>.*?</ignore_js_op>",
+            "replacement": ""
+          }
+        ],
         "image": ".//a[contains(@class, 'kmimg')]//img/@src",
         "nextPage": "//a[contains(@class, 'nxt')]/@href",
+        "customFields": [
+          {
+            "key": "section",
+            "label": "Section",
+            "xpath": ".//*[contains(@class, 'kmfoot')]/a[contains(@class, 'kmico_bk')][1]",
+            "scope": "item"
+          },
+          {
+            "key": "replies",
+            "label": "Replies",
+            "xpath": ".//*[contains(@class, 'kmpl')][1]",
+            "scope": "item"
+          },
+          {
+            "key": "views",
+            "label": "Views",
+            "xpath": ".//*[contains(@class, 'kmck')][1]",
+            "scope": "item"
+          }
+        ],
         "maxItems": 20
       }
     }
