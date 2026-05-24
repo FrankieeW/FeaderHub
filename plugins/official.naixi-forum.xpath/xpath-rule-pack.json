@@ -4,6 +4,10 @@
   "name": "Naixi Forum XPath Rules",
   "version": "0.1.0",
   "description": "Static XPath rules for naixi.net forum thread lists with section-based browsing.",
+  "auth": {
+    "checkUrl": "https://forum.naixi.net/home.php?mod=spacecp",
+    "loggedInXPath": "//a[contains(@href,'logout') or contains(@href,'action=logout')]"
+  },
   "candidates": [
     {
       "id": "naixi-forum-thread-list",
@@ -51,7 +55,14 @@
             "scope": "item"
           }
         ],
-        "maxItems": 20
+        "maxItems": 20,
+        "reader": {
+          "removeSelectors": ["//ignore_js_op", "//*[contains(concat(' ', normalize-space(@class), ' '), ' quote ')]"],
+          "resolveRelativeUrls": true,
+          "rewriteLinks": true,
+          "showCustomFields": true,
+          "layout": { "typography": "serif", "width": "normal", "immersive": false }
+        }
       }
     }
   ],

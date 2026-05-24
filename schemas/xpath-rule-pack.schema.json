@@ -10,6 +10,15 @@
     "name": { "type": "string" },
     "version": { "type": "string" },
     "description": { "type": "string" },
+    "auth": {
+      "type": "object",
+      "properties": {
+        "checkUrl": { "type": "string", "format": "uri" },
+        "loggedInXPath": { "type": "string" }
+      },
+      "required": ["checkUrl", "loggedInXPath"],
+      "additionalProperties": false
+    },
     "parameters": {
       "type": "object",
       "properties": {
@@ -68,6 +77,26 @@
               "content": { "type": ["string", "null"] },
               "image": { "type": ["string", "null"] },
               "nextPage": { "type": ["string", "null"] }
+            },
+            "reader": {
+              "type": "object",
+              "properties": {
+                "removeSelectors": { "type": "array", "items": { "type": "string" } },
+                "resolveRelativeUrls": { "type": "boolean" },
+                "rewriteLinks": { "type": "boolean" },
+                "showCustomFields": { "type": "boolean" },
+                "layout": {
+                  "type": "object",
+                  "properties": {
+                    "typography": { "enum": ["system", "serif", "large"] },
+                    "width": { "enum": ["narrow", "normal", "wide"] },
+                    "immersive": { "type": "boolean" }
+                  },
+                  "additionalProperties": false
+                },
+                "css": { "type": "string" }
+              },
+              "additionalProperties": false
             },
             "additionalProperties": false
           }
