@@ -10,6 +10,37 @@
     "name": { "type": "string" },
     "version": { "type": "string" },
     "description": { "type": "string" },
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "urlTemplate": { "type": "string" },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "path", "url"],
+            "properties": {
+              "id": { "type": "string" },
+              "path": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "url": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "defaults": {
+          "type": "object",
+          "properties": {
+            "maxItems": { "type": "integer" },
+            "maxPages": { "type": "integer" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
     "candidates": {
       "type": "array",
       "items": {

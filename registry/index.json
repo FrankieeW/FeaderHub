@@ -3,6 +3,14 @@
   "updatedAt": "2026-05-24T00:00:00Z",
   "plugins": [
     {
+      "id": "official.naixi-forum.xpath",
+      "name": "Naixi Forum XPath Rules",
+      "version": "0.1.0",
+      "kind": "static-xpath-rule-pack",
+      "manifest": "plugins/official.naixi-forum.xpath/manifest.json",
+      "sha256": "TODO"
+    },
+    {
       "id": "official.discuz.xpath",
       "name": "Discuz XPath Rules",
       "version": "0.1.0",

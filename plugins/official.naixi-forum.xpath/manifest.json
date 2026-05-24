@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.naixi-forum.xpath",
+  "name": "Naixi Forum XPath Rules",
+  "version": "0.1.0",
+  "kind": "static-xpath-rule-pack",
+  "feaderApiVersion": "xpath-rule-pack/v1",
+  "description": "XPath and AI prompt rules for naixi.net Discuz forum thread lists with section-based source creation.",
+  "entry": "xpath-rule-pack.json",
+  "permissions": {
+    "network": ["forum.naixi.net"],
+    "credentials": [],
+    "execution": "none"
+  },
+  "maintainers": ["Feader Core"],
+  "sha256": "TODO",
+  "signature": "TODO"
+}
