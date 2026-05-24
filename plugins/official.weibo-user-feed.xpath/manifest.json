@@ -16,8 +16,13 @@
   "authors": [
     {
       "name": "Frankie Wang",
+      "evmAddress": "0x00000073a2c5581b9ea3d79261a567571Dd14E31",
+      "avatarUrl": "https://github.com/FrankieeW.png",
+      "website": "https://github.com/FrankieeW",
+      "email": "git@frankie.wang",
       "githubId": "FrankieeW"
     }
   ],
-  "sha256": "6797fd5e7aeaae5947616437ca7daa67a500c533dd0a5d649f826856fbfd4469"
+  "maintainers": ["Frankie Wang"],
+  "sha256": "f4b188cf82e4847b8a2a557a2e7607cd99f850e6205a853107910dede42db0d5"
 }
