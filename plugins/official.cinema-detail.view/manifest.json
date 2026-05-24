@@ -13,11 +13,16 @@
     "execution": "none"
   },
   "maintainers": [
-    "Feader Core"
+    "Frankie Wang"
   ],
   "authors": [
     {
-      "name": "Feader Core"
+      "name": "Frankie Wang",
+      "evmAddress": "0x00000073a2c5581b9ea3d79261a567571Dd14E31",
+      "avatarUrl": "https://github.com/FrankieeW.png",
+      "website": "https://github.com/FrankieeW",
+      "email": "git@frankie.wang",
+      "githubId": "FrankieeW"
     }
   ],
   "logo": null,
