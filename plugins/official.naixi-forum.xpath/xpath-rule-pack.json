@@ -18,6 +18,7 @@
         "publishedAt": ".//*[contains(@class, 'kmtime')]/*[@title][1]/@title | .//*[contains(@class, 'kmtime')]",
         "author": ".//*[contains(@class, 'kmfoot')]/a[starts-with(@href, 'space-uid')][1]",
         "content": null,
+        "detailContent": "//*[@id='postlist']//td[contains(@class, 't_f') and starts-with(@id, 'postmessage_')][1]",
         "image": ".//a[contains(@class, 'kmimg')]//img/@src",
         "nextPage": "//a[contains(@class, 'nxt')]/@href"
       }
