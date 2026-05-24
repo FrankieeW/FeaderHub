@@ -9,9 +9,19 @@
   "entry": "xpath-rule-pack.json",
   "permissions": {
     "network": ["forum.naixi.net"],
-    "credentials": [],
+    "credentials": ["cookie"],
     "execution": "none"
   },
-  "maintainers": ["Feader Core"],
+  "authors": [
+    {
+      "name": "Frankie Wang",
+      "evmAddress": "0x00000073a2c5581b9ea3d79261a567571Dd14E31",
+      "avatarUrl": "https://github.com/FrankieeW.png",
+      "website": "https://github.com/FrankieeW",
+      "email": "git@frankie.wang",
+      "githubId": "FrankieeW"
+    }
+  ],
+  "maintainers": ["Frankie Wang"],
   "sha256": "3885fa09ae56141700168caf687f6d092762528d2d374cc0784b9c94a08fd0f5"
 }
