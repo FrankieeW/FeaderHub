@@ -16,7 +16,7 @@
       "version": "0.1.0",
       "kind": "json-api-feed",
       "manifest": "plugins/official.weibo-user-feed.xpath/manifest.json",
-      "sha256": "cbf544430f2072366193b2e5716adbec309a10f1ac5aada222cb2f2c845b50d3"
+      "sha256": "0972f7933e2ab6c6ae781250b46be505bdf0b05c8c219ac01a0441b27ea73740"
     }
   ]
 }
