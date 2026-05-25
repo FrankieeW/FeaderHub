@@ -24,6 +24,12 @@
       "requiredCredentials": ["WEIBO_COOKIES"]
     }
   ],
+  "settingsCard": {
+    "id": "rsshub-runtime-card",
+    "title": "RSSHub Runtime",
+    "renderer": "rsshub-runtime",
+    "placement": "settings"
+  },
   "settingsPage": {
     "title": "RSSHub Runtime",
     "sections": [

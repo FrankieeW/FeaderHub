@@ -24,7 +24,7 @@
       "version": "0.1.0",
       "kind": "runtime-source-plugin",
       "manifest": "plugins/official.rsshub-runtime.source/manifest.json",
-      "sha256": "0d5fc8fc091c1391d20f5386f60eceab02966ff213e48dd19c5d2273f98aca34"
+      "sha256": "1ef68bc4caf01ad0bf11ffe504ce20aa12d5390977541b1603562f96fa0ab756"
     },
     {
       "id": "official.editorial-ui.view",

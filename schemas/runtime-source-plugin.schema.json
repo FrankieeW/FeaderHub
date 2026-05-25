@@ -41,6 +41,17 @@
         "additionalProperties": false
       }
     },
+    "settingsCard": {
+      "type": "object",
+      "required": ["id", "title", "renderer"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "renderer": { "type": "string" },
+        "placement": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
     "settingsPage": {
       "type": "object",
       "required": ["title", "sections"],
