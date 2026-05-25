@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.calm-ui.view",
+  "name": "Calm Glass",
+  "version": "0.1.0",
+  "slot": "app-ui",
+  "description": "Soft blue-green chrome and lighter panels for a quieter daily reading workspace.",
+  "capabilities": [
+    "app.theme",
+    "app.chrome",
+    "settings.toggle"
+  ],
+  "tokens": {
+    "colorBg": "#eef6f4",
+    "colorBgAccent": "rgba(58, 137, 126, 0.14)",
+    "colorPanel": "rgba(250, 255, 253, 0.88)",
+    "colorPanelStrong": "#ffffff",
+    "colorPanelSoft": "rgba(225, 241, 237, 0.72)",
+    "colorPanelMuted": "#dfecea",
+    "colorHeading": "#162725",
+    "colorText": "#263b38",
+    "colorMuted": "#647977",
+    "colorBorder": "#c7d9d5",
+    "colorBrand": "#3a897e",
+    "colorAction": "#27796f",
+    "colorActionHover": "#1f635c",
+    "shadowPanel": "0 22px 48px rgba(41, 99, 92, 0.12)"
+  },
+  "layout": {
+    "density": "comfortable",
+    "tone": "calm",
+    "motion": "soft"
+  },
+  "preview": {
+    "title": "Calm glass",
+    "description": "Quiet blue-green surfaces for low-friction reading.",
+    "sampleData": []
+  }
+}

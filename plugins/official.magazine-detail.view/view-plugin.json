@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.magazine-detail.view",
+  "name": "Magazine",
+  "version": "0.1.0",
+  "slot": "detail-view",
+  "description": "Uses larger art, wider titles, and editorial spacing for feature-style reading.",
+  "capabilities": [
+    "detail.view",
+    "detail.editorialLayout",
+    "detail.heroMedia"
+  ],
+  "tokens": {
+    "maxWidth": "900px",
+    "titleMaxWidth": "20ch",
+    "bodyWidth": "70ch",
+    "mediaRadius": "8px",
+    "metadataMode": "stacked"
+  },
+  "layout": {
+    "readingMode": "feature",
+    "mediaPriority": "hero-first",
+    "bodyRhythm": "editorial"
+  },
+  "preview": {
+    "title": "Magazine detail",
+    "description": "Feature-like article layout with stronger visual rhythm.",
+    "sampleData": []
+  }
+}

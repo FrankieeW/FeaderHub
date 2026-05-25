@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.focus-detail.view",
+  "name": "Focus",
+  "version": "0.1.0",
+  "slot": "detail-view",
+  "description": "Dims metadata and narrows the body for distraction-light long-form reading.",
+  "capabilities": [
+    "detail.view",
+    "detail.focusMode",
+    "detail.readability"
+  ],
+  "tokens": {
+    "maxWidth": "760px",
+    "bodyWidth": "62ch",
+    "metadataOpacity": "0.7",
+    "actionsMode": "minimal"
+  },
+  "layout": {
+    "readingMode": "focus",
+    "metadataPlacement": "subtle",
+    "bodyRhythm": "longform"
+  },
+  "preview": {
+    "title": "Focus detail",
+    "description": "Narrow, quiet long-form reading surface.",
+    "sampleData": []
+  }
+}

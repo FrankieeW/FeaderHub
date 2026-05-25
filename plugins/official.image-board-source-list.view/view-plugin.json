@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.image-board-source-list.view",
+  "name": "Image Board",
+  "version": "0.1.0",
+  "slot": "source-list",
+  "description": "Turns the source article queue into thumbnail-led cards for visual feeds.",
+  "capabilities": [
+    "sourceList.view",
+    "sourceList.thumbnail",
+    "sourceList.visualScan"
+  ],
+  "tokens": {
+    "cardPadding": "12px",
+    "imageAspectRatio": "16 / 9",
+    "summaryLines": 2,
+    "mediaPriority": "thumbnail-first"
+  },
+  "layout": {
+    "template": "image-board",
+    "interaction": "visual-card"
+  },
+  "preview": {
+    "title": "Image board",
+    "description": "Thumbnail-led cards for visual feeds.",
+    "sampleData": []
+  }
+}

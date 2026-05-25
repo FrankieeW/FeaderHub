@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.terminal-ui.view",
+  "name": "Terminal Ops",
+  "version": "0.1.0",
+  "slot": "app-ui",
+  "description": "A dark operational shell with high-contrast surfaces for long source triage sessions.",
+  "capabilities": [
+    "app.theme",
+    "app.chrome",
+    "settings.toggle"
+  ],
+  "tokens": {
+    "colorBg": "#070a0d",
+    "colorBgAccent": "rgba(55, 255, 156, 0.1)",
+    "colorPanel": "rgba(14, 20, 23, 0.92)",
+    "colorPanelStrong": "#121a1e",
+    "colorPanelSoft": "rgba(18, 31, 34, 0.76)",
+    "colorPanelMuted": "#0b1114",
+    "colorHeading": "#ecfff5",
+    "colorText": "#cce8dc",
+    "colorMuted": "#87a79a",
+    "colorFaint": "#5f8174",
+    "colorBorder": "#22393a",
+    "colorBorderStrong": "#3b6d60",
+    "colorBrand": "#25d889",
+    "colorBrandContrast": "#06110c",
+    "colorAction": "#25d889",
+    "colorActionHover": "#5df0aa",
+    "colorActionContrast": "#06110c",
+    "colorSuccess": "#64f2a8",
+    "colorWarning": "#e6c65c",
+    "colorDanger": "#ff7f9f",
+    "colorFill": "#102025",
+    "shadowPanel": "0 22px 54px rgba(0, 0, 0, 0.36)"
+  },
+  "layout": {
+    "density": "compact",
+    "tone": "terminal",
+    "motion": "minimal"
+  },
+  "preview": {
+    "title": "Terminal ops",
+    "description": "Dark operational chrome for long triage sessions.",
+    "sampleData": []
+  }
+}

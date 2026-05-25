@@ -1,11 +1,11 @@
 {
   "schemaVersion": "feader-plugin/v1",
-  "id": "official.social-source-list.view",
-  "name": "Social Source List View",
-  "version": "0.2.0",
-  "kind": "source-list-view",
+  "id": "official.magazine-detail.view",
+  "name": "Magazine",
+  "version": "0.1.0",
+  "kind": "detail-view",
   "feaderApiVersion": "feader-view-plugin/v1",
-  "description": "Official post-stream source list template for social media and short-form feeds with avatars, usernames, and nine-image grids.",
+  "description": "Official magazine-style article detail template.",
   "entry": "view-plugin.json",
   "permissions": {
     "network": [],
@@ -26,5 +26,5 @@
     }
   ],
   "logo": null,
-  "sha256": "4dce25f6013d6bd27201b7dcd72b5fbcbdad4ec404e060d16b6428ed0c0384c4"
+  "sha256": "d85f0b75ba83f4fac38668a5a74fedd823bb5e81b84e13ea940e6734f4a254cb"
 }

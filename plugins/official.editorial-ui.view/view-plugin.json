@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.editorial-ui.view",
+  "name": "Editorial Desk",
+  "version": "0.1.0",
+  "slot": "app-ui",
+  "description": "Warmer panels, stronger masthead contrast, and print-desk rhythm across the app.",
+  "capabilities": [
+    "app.theme",
+    "app.chrome",
+    "settings.toggle"
+  ],
+  "tokens": {
+    "colorBg": "#fbf4e8",
+    "colorPanel": "rgba(255, 250, 241, 0.9)",
+    "colorPanelStrong": "#fffdf8",
+    "colorPanelSoft": "rgba(248, 231, 204, 0.72)",
+    "colorPanelMuted": "#efe1cc",
+    "colorHeading": "#24180f",
+    "colorText": "#3c2c21",
+    "colorMuted": "#806b58",
+    "colorBorder": "#dfc9aa",
+    "colorBrand": "#a54722",
+    "colorAction": "#b4401d",
+    "colorActionHover": "#8d2d12",
+    "shadowPanel": "0 22px 44px rgba(104, 62, 26, 0.13)"
+  },
+  "layout": {
+    "density": "comfortable",
+    "tone": "editorial",
+    "motion": "quiet"
+  },
+  "preview": {
+    "title": "Editorial desk",
+    "description": "Warm, print-inspired surfaces for daily source reading.",
+    "sampleData": []
+  }
+}

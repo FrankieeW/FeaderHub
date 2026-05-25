@@ -1,11 +1,11 @@
 {
   "schemaVersion": "feader-plugin/v1",
-  "id": "official.social-source-list.view",
-  "name": "Social Source List View",
-  "version": "0.2.0",
+  "id": "official.image-board-source-list.view",
+  "name": "Image Board",
+  "version": "0.1.0",
   "kind": "source-list-view",
   "feaderApiVersion": "feader-view-plugin/v1",
-  "description": "Official post-stream source list template for social media and short-form feeds with avatars, usernames, and nine-image grids.",
+  "description": "Official thumbnail-led source list template for visual feeds.",
   "entry": "view-plugin.json",
   "permissions": {
     "network": [],
@@ -26,5 +26,5 @@
     }
   ],
   "logo": null,
-  "sha256": "4dce25f6013d6bd27201b7dcd72b5fbcbdad4ec404e060d16b6428ed0c0384c4"
+  "sha256": "0e518727a2745e85d48315262c771109c7713e95e96ea9223654437e5754b10d"
 }

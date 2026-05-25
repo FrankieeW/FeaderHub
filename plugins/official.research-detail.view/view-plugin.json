@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.research-detail.view",
+  "name": "Research",
+  "version": "0.1.0",
+  "slot": "detail-view",
+  "description": "Keeps metadata prominent and body blocks structured for reference-heavy articles.",
+  "capabilities": [
+    "detail.view",
+    "detail.metadata",
+    "detail.referenceReading"
+  ],
+  "tokens": {
+    "maxWidth": "860px",
+    "bodyWidth": "68ch",
+    "metadataMode": "prominent",
+    "blockSpacing": "structured"
+  },
+  "layout": {
+    "readingMode": "research",
+    "metadataPlacement": "header",
+    "bodyRhythm": "structured"
+  },
+  "preview": {
+    "title": "Research detail",
+    "description": "Structured reading layout with prominent metadata.",
+    "sampleData": []
+  }
+}

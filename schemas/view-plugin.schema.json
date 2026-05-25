@@ -25,9 +25,7 @@
     },
     "tokens": {
       "type": "object",
-      "additionalProperties": {
-        "type": ["string", "number", "boolean"]
-      }
+      "additionalProperties": { "type": "string" }
     },
     "layout": {
       "type": "object",

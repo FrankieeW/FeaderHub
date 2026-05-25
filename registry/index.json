@@ -19,6 +19,30 @@
       "sha256": "0c763653a6fa379192e708507e2223fa37a89a6dc26dfc978001ed82273850d7"
     },
     {
+      "id": "official.editorial-ui.view",
+      "name": "Editorial Desk",
+      "version": "0.1.0",
+      "kind": "app-ui-theme",
+      "manifest": "plugins/official.editorial-ui.view/manifest.json",
+      "sha256": "a00a741025b2373d8384cc2f36d98eba89cf4beca807447159daac4e68f3b72e"
+    },
+    {
+      "id": "official.terminal-ui.view",
+      "name": "Terminal Ops",
+      "version": "0.1.0",
+      "kind": "app-ui-theme",
+      "manifest": "plugins/official.terminal-ui.view/manifest.json",
+      "sha256": "8b0defa08a5c520cb80788de87ffed6781497941270a2f9658259972eef09df2"
+    },
+    {
+      "id": "official.calm-ui.view",
+      "name": "Calm Glass",
+      "version": "0.1.0",
+      "kind": "app-ui-theme",
+      "manifest": "plugins/official.calm-ui.view/manifest.json",
+      "sha256": "b78d7c8300c058264ff960dc093385e7b7d758c56d80ce7d8ca865cdc5356b0e"
+    },
+    {
       "id": "official.cyberpunk-ui.view",
       "name": "Cyberpunk UI Theme",
       "version": "0.1.0",
@@ -27,12 +51,52 @@
       "sha256": "4290dfe0f69154ed41066b9ac1b392a5ced4dc308c71870c1d06fc5665dc068e"
     },
     {
+      "id": "official.image-board-source-list.view",
+      "name": "Image Board",
+      "version": "0.1.0",
+      "kind": "source-list-view",
+      "manifest": "plugins/official.image-board-source-list.view/manifest.json",
+      "sha256": "0e518727a2745e85d48315262c771109c7713e95e96ea9223654437e5754b10d"
+    },
+    {
       "id": "official.social-source-list.view",
       "name": "Social Source List View",
       "version": "0.2.0",
       "kind": "source-list-view",
       "manifest": "plugins/official.social-source-list.view/manifest.json",
-      "sha256": "c7a27b485b2cb9727ec83abcab16535d161a600419efb79623b514f65f3c9d63"
+      "sha256": "4dce25f6013d6bd27201b7dcd72b5fbcbdad4ec404e060d16b6428ed0c0384c4"
+    },
+    {
+      "id": "official.dense-radar-source-list.view",
+      "name": "Dense Radar",
+      "version": "0.1.0",
+      "kind": "source-list-view",
+      "manifest": "plugins/official.dense-radar-source-list.view/manifest.json",
+      "sha256": "d1eb066d0c7b26debeee552eeb647d695979faa69e26648bd09d5fc0c754bc3b"
+    },
+    {
+      "id": "official.magazine-detail.view",
+      "name": "Magazine",
+      "version": "0.1.0",
+      "kind": "detail-view",
+      "manifest": "plugins/official.magazine-detail.view/manifest.json",
+      "sha256": "d85f0b75ba83f4fac38668a5a74fedd823bb5e81b84e13ea940e6734f4a254cb"
+    },
+    {
+      "id": "official.focus-detail.view",
+      "name": "Focus",
+      "version": "0.1.0",
+      "kind": "detail-view",
+      "manifest": "plugins/official.focus-detail.view/manifest.json",
+      "sha256": "db63b41a359859f1346223e867e89ff914b28f4b001d603f575fd613e58ac1ad"
+    },
+    {
+      "id": "official.research-detail.view",
+      "name": "Research",
+      "version": "0.1.0",
+      "kind": "detail-view",
+      "manifest": "plugins/official.research-detail.view/manifest.json",
+      "sha256": "11bce19eea74be9885d5923c7078ff6fb24bc44d054da0b65655ccc0eadbd118"
     },
     {
       "id": "official.cinema-detail.view",

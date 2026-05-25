@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "feader-view-plugin/v1",
+  "id": "official.dense-radar-source-list.view",
+  "name": "Dense Radar",
+  "version": "0.1.0",
+  "slot": "source-list",
+  "description": "Compacts the queue for fast scanning of many short updates.",
+  "capabilities": [
+    "sourceList.view",
+    "sourceList.compact",
+    "sourceList.fastScan"
+  ],
+  "tokens": {
+    "cardPadding": "8px",
+    "summaryLines": 1,
+    "metadataMode": "inline",
+    "actionsMode": "minimal"
+  },
+  "layout": {
+    "template": "dense-radar",
+    "interaction": "scan-list"
+  },
+  "preview": {
+    "title": "Dense radar",
+    "description": "Compact list rows for high-volume scanning.",
+    "sampleData": []
+  }
+}

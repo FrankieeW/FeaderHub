@@ -18,9 +18,9 @@
     "cardPadding": "14px",
     "gap": "10px",
     "imageGridGap": "4px",
-    "imageGridMaxItems": 9,
-    "sourceInitials": true,
-    "summaryLines": 2
+    "imageGridMaxItems": "9",
+    "sourceInitials": "true",
+    "summaryLines": "2"
   },
   "layout": {
     "templateColumns": "42px minmax(0, 1fr)",
