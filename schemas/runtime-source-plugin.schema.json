@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://feader.app/schemas/runtime-source-plugin.schema.json",
+  "title": "Feader Runtime Source Plugin",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "version", "runtime", "capabilities"],
+  "properties": {
+    "schemaVersion": { "const": "runtime-source-plugin/v1" },
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "runtime": {
+      "type": "object",
+      "required": ["engine"],
+      "properties": {
+        "engine": { "type": "string" },
+        "package": { "type": "string" },
+        "version": { "type": "string" },
+        "entry": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "routeTemplates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "routeTemplate"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "routeTemplate": { "type": "string" },
+          "requiredCredentials": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

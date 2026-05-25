@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "runtime-source-plugin/v1",
+  "id": "official.rsshub-runtime.source",
+  "name": "RSSHub Runtime",
+  "version": "0.1.0",
+  "runtime": {
+    "engine": "node",
+    "package": "rsshub",
+    "version": "latest",
+    "entry": "rsshub"
+  },
+  "capabilities": [
+    "runtime.localFeedGenerator",
+    "runtime.nodePackage",
+    "rsshub.routes",
+    "rsshub.weiboCookies",
+    "puppeteer.optional"
+  ],
+  "routeTemplates": [
+    {
+      "id": "weibo-user",
+      "label": "Weibo user timeline",
+      "routeTemplate": "/weibo/user/{uid}/displayComments={displayComments}",
+      "requiredCredentials": ["WEIBO_COOKIES"]
+    }
+  ]
+}

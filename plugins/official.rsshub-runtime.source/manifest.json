@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "feader-plugin/v1",
+  "id": "official.rsshub-runtime.source",
+  "name": "RSSHub Runtime",
+  "version": "0.1.0",
+  "kind": "runtime-source-plugin",
+  "feaderApiVersion": "runtime-source-plugin/v1",
+  "description": "Run RSSHub as an advanced local source runtime for routes that need npm, cookies, and optional Puppeteer support while keeping Feader Core on the normal RSS ingestion path.",
+  "logo": "https://docs.rsshub.app/logo.png",
+  "entry": "runtime-source-plugin.json",
+  "permissions": {
+    "network": ["rsshub.app", "m.weibo.cn", "weibo.com", "sinaimg.cn"],
+    "credentials": ["WEIBO_COOKIES"],
+    "execution": "sandboxed"
+  },
+  "authors": [
+    {
+      "name": "Frankie Wang",
+      "evmAddress": "0x00000073a2c5581b9ea3d79261a567571Dd14E31",
+      "avatarUrl": "https://github.com/FrankieeW.png",
+      "website": "https://github.com/FrankieeW",
+      "email": "git@frankie.wang",
+      "githubId": "FrankieeW"
+    }
+  ],
+  "maintainers": ["Frankie Wang"],
+  "sha256": "ee5a2866f241fc58cea07210d7cedc7dc979bd8f2e913fa3a9707f425f1febad"
+}

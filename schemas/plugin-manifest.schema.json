@@ -22,6 +22,7 @@
       "enum": [
         "static-xpath-rule-pack",
         "advanced-source-plugin",
+        "runtime-source-plugin",
         "json-api-feed",
         "app-ui-theme",
         "source-list-view",

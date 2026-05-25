@@ -19,6 +19,14 @@
       "sha256": "83b16d79336d4a22824ae30bb6e2b8a2e7719f526091cdb3610baab2810939c9"
     },
     {
+      "id": "official.rsshub-runtime.source",
+      "name": "RSSHub Runtime",
+      "version": "0.1.0",
+      "kind": "runtime-source-plugin",
+      "manifest": "plugins/official.rsshub-runtime.source/manifest.json",
+      "sha256": "ee5a2866f241fc58cea07210d7cedc7dc979bd8f2e913fa3a9707f425f1febad"
+    },
+    {
       "id": "official.editorial-ui.view",
       "name": "Editorial Desk",
       "version": "0.1.0",
