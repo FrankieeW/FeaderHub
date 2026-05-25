@@ -2,8 +2,8 @@
   "schemaVersion": "xpath-rule-pack/v1",
   "id": "official.weibo-user-feed.xpath",
   "name": "Weibo User Feed",
-  "version": "0.1.0",
-  "description": "Static JSON API mapping for m.weibo.cn user timelines. Entries are mblog cards filtered by card_type==9.",
+  "version": "0.2.0",
+  "description": "Static JSON API mapping for m.weibo.cn user timelines. Entries are mblog cards filtered by card_type==9. Keeps the plugin id and uid parameter stable so installed user feeds can update in place.",
   "parameters": {
     "urlTemplate": "https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid=107603{uid}",
     "params": [
@@ -35,7 +35,7 @@
       "pageType": "social-feed",
       "priority": 90,
       "detect": ["mblog", "card_type", "created_at"],
-      "promptRule": "Weibo user feed: JSON API on m.weibo.cn. Items are mblog objects under data.cards where card_type==9. Each mblog has text (HTML body), user.screen_name, created_at, reposts_count, comments_count, attitudes_count, pics[] with large.url, bid for constructing weibo.com links. Pagination via data.cardlistInfo.since_id cursor.",
+      "promptRule": "Weibo user feed: JSON API on m.weibo.cn. Items are mblog objects under data.cards where card_type==9. Each mblog has text (HTML body), user.screen_name, user.profile_image_url, created_at, reposts_count, comments_count, attitudes_count, pics[] with large.url, bid for constructing weibo.com links. Pagination via data.cardlistInfo.since_id cursor.",
       "selectors": {
         "items": "data.cards[?(@.card_type==9)]",
         "title": "mblog.user.screen_name",
@@ -47,6 +47,9 @@
         "content": "mblog.text",
         "nextPage": "data.cardlistInfo.since_id",
         "customFields": [
+          { "key": "username", "label": "用户名", "xpath": "mblog.user.screen_name", "scope": "item" },
+          { "key": "avatarUrl", "label": "用户头像", "xpath": "mblog.user.profile_image_url", "scope": "item" },
+          { "key": "images", "label": "图片", "xpath": "mblog.pics[*].large.url", "scope": "item" },
           { "key": "reposts", "label": "转发", "xpath": "mblog.reposts_count", "scope": "item" },
           { "key": "comments", "label": "评论", "xpath": "mblog.comments_count", "scope": "item" },
           { "key": "likes", "label": "点赞", "xpath": "mblog.attitudes_count", "scope": "item" },

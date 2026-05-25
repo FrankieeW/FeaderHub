@@ -2,19 +2,23 @@
   "schemaVersion": "feader-view-plugin/v1",
   "id": "official.social-source-list.view",
   "name": "Social Source List View",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "slot": "source-list",
-  "description": "A social-post style source queue with avatars, compact metadata, and conversational spacing.",
+  "description": "A social-post style source queue with user avatars, usernames, compact metadata, and nine-image grids.",
   "capabilities": [
     "sourceList.view",
     "sourceList.avatar",
-    "sourceList.socialMetadata"
+    "sourceList.username",
+    "sourceList.socialMetadata",
+    "sourceList.imageGrid"
   ],
   "tokens": {
     "avatarShape": "circle",
     "cardBorder": "1px solid var(--color-border)",
     "cardPadding": "14px",
     "gap": "10px",
+    "imageGridGap": "4px",
+    "imageGridMaxItems": 9,
     "sourceInitials": true,
     "summaryLines": 2
   },
@@ -25,9 +29,23 @@
       "avatar meta",
       "avatar title",
       "avatar summary",
+      "avatar media",
       "avatar fields",
       "avatar actions"
     ],
+    "bindings": {
+      "avatarUrl": ["avatarUrl", "authorAvatar", "user.avatarUrl"],
+      "username": ["username", "author", "user.name"],
+      "imageGrid": ["images", "media", "attachments.images"]
+    },
+    "media": {
+      "area": "media",
+      "type": "image-grid",
+      "maxItems": 9,
+      "columns": 3,
+      "aspectRatio": "1 / 1",
+      "objectFit": "cover"
+    },
     "interaction": "post-card"
   },
   "preview": {
@@ -37,7 +55,20 @@
       {
         "sourceTitle": "Weibo",
         "title": "New post from followed account",
-        "summary": "Short update with fast metadata scanning."
+        "username": "微博用户",
+        "avatarUrl": "https://github.com/FrankieeW.png",
+        "summary": "Short update with fast metadata scanning.",
+        "images": [
+          "https://picsum.photos/seed/feader-social-1/320/320",
+          "https://picsum.photos/seed/feader-social-2/320/320",
+          "https://picsum.photos/seed/feader-social-3/320/320",
+          "https://picsum.photos/seed/feader-social-4/320/320",
+          "https://picsum.photos/seed/feader-social-5/320/320",
+          "https://picsum.photos/seed/feader-social-6/320/320",
+          "https://picsum.photos/seed/feader-social-7/320/320",
+          "https://picsum.photos/seed/feader-social-8/320/320",
+          "https://picsum.photos/seed/feader-social-9/320/320"
+        ]
       }
     ]
   }

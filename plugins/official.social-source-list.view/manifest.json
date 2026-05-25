@@ -2,10 +2,10 @@
   "schemaVersion": "feader-plugin/v1",
   "id": "official.social-source-list.view",
   "name": "Social Source List View",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "kind": "source-list-view",
   "feaderApiVersion": "feader-view-plugin/v1",
-  "description": "Official post-stream source list template for social media and short-form feeds.",
+  "description": "Official post-stream source list template for social media and short-form feeds with avatars, usernames, and nine-image grids.",
   "entry": "view-plugin.json",
   "permissions": {
     "network": [],
@@ -26,5 +26,5 @@
     }
   ],
   "logo": null,
-  "sha256": "b7b68b42c7df2539449a4888ea9696560e6f4726b1bf071173b879e91ed578be"
+  "sha256": "c7a27b485b2cb9727ec83abcab16535d161a600419efb79623b514f65f3c9d63"
 }

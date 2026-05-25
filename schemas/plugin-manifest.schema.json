@@ -30,7 +30,7 @@
     },
     "feaderApiVersion": { "type": "string" },
     "description": { "type": "string" },
-    "logo": { "type": "string", "format": "uri" },
+    "logo": { "type": ["string", "null"], "format": "uri" },
     "entry": { "type": "string" },
     "permissions": {
       "type": "object",
