@@ -56,7 +56,7 @@
       "version": "0.1.0",
       "kind": "source-list-view",
       "manifest": "plugins/official.image-board-source-list.view/manifest.json",
-      "sha256": "0e518727a2745e85d48315262c771109c7713e95e96ea9223654437e5754b10d"
+      "sha256": "2de9d9968a95cbf7d3b0fef141ba16df881da002451a406b48a30d996918b524"
     },
     {
       "id": "official.social-source-list.view",
@@ -72,7 +72,7 @@
       "version": "0.1.0",
       "kind": "source-list-view",
       "manifest": "plugins/official.dense-radar-source-list.view/manifest.json",
-      "sha256": "d1eb066d0c7b26debeee552eeb647d695979faa69e26648bd09d5fc0c754bc3b"
+      "sha256": "deec45c40a8283ff182c789d9d4f70b94a54ff0e30e825a5f2c984750f4fb4b0"
     },
     {
       "id": "official.magazine-detail.view",

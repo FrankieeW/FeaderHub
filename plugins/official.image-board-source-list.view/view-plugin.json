@@ -13,7 +13,7 @@
   "tokens": {
     "cardPadding": "12px",
     "imageAspectRatio": "16 / 9",
-    "summaryLines": 2,
+    "summaryLines": "2",
     "mediaPriority": "thumbnail-first"
   },
   "layout": {
