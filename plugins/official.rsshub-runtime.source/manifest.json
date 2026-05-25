@@ -9,6 +9,10 @@
   "logo": "https://docs.rsshub.app/logo.png",
   "entry": "runtime-source-plugin.json",
   "permissions": {
+    "ui": ["settings-page"],
+    "storage": ["plugin-config"],
+    "importExport": ["config"],
+    "runtime": ["node-package", "local-port"],
     "network": ["rsshub.app", "m.weibo.cn", "weibo.com", "sinaimg.cn"],
     "credentials": ["WEIBO_COOKIES"],
     "execution": "sandboxed"
@@ -24,5 +28,5 @@
     }
   ],
   "maintainers": ["Frankie Wang"],
-  "sha256": "ee5a2866f241fc58cea07210d7cedc7dc979bd8f2e913fa3a9707f425f1febad"
+  "sha256": "0d5fc8fc091c1391d20f5386f60eceab02966ff213e48dd19c5d2273f98aca34"
 }

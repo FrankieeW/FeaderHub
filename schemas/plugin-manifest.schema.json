@@ -44,6 +44,22 @@
           "type": "array",
           "items": { "type": "string" }
         },
+        "ui": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "storage": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "importExport": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "runtime": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
         "execution": { "enum": ["none", "sandboxed"] }
       },
       "additionalProperties": false

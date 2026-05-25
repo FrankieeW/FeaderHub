@@ -40,6 +40,57 @@
         },
         "additionalProperties": false
       }
+    },
+    "settingsPage": {
+      "type": "object",
+      "required": ["title", "sections"],
+      "properties": {
+        "title": { "type": "string" },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "title", "fields"],
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "description": { "type": "string" },
+              "fields": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["key", "label", "type"],
+                  "properties": {
+                    "key": { "type": "string" },
+                    "label": { "type": "string" },
+                    "type": {
+                      "enum": ["boolean", "number", "text", "path", "select", "secret"]
+                    },
+                    "placeholder": { "type": "string" },
+                    "help": { "type": "string" },
+                    "default": {},
+                    "options": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["value", "label"],
+                        "properties": {
+                          "value": { "type": "string" },
+                          "label": { "type": "string" }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
     }
   },
   "additionalProperties": false

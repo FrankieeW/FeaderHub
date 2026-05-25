@@ -23,5 +23,62 @@
       "routeTemplate": "/weibo/user/{uid}/displayComments={displayComments}",
       "requiredCredentials": ["WEIBO_COOKIES"]
     }
-  ]
+  ],
+  "settingsPage": {
+    "title": "RSSHub Runtime",
+    "sections": [
+      {
+        "id": "runtime",
+        "title": "Runtime",
+        "description": "Local RSSHub process settings managed by Feader.",
+        "fields": [
+          {
+            "key": "enabled",
+            "label": "Enable local RSSHub",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "key": "port",
+            "label": "Local port",
+            "type": "number",
+            "default": 1200,
+            "help": "Feader will use this localhost port when runtime lifecycle support is enabled."
+          },
+          {
+            "key": "packageVersion",
+            "label": "RSSHub package version",
+            "type": "text",
+            "default": "latest",
+            "placeholder": "latest"
+          },
+          {
+            "key": "chromiumPath",
+            "label": "Chromium path",
+            "type": "path",
+            "placeholder": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+          }
+        ]
+      },
+      {
+        "id": "weibo",
+        "title": "Weibo",
+        "description": "Weibo secrets are kept in Feader's credential store and are excluded from normal config export.",
+        "fields": [
+          {
+            "key": "WEIBO_COOKIES",
+            "label": "Weibo cookies",
+            "type": "secret",
+            "help": "Use the plugin credential field to store the cookie value."
+          },
+          {
+            "key": "displayComments",
+            "label": "Display comments by default",
+            "type": "boolean",
+            "default": true
+          }
+        ]
+      }
+    ]
+  }
 }
