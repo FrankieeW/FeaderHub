@@ -2,7 +2,7 @@
   "schemaVersion": "xpath-rule-pack/v1",
   "id": "official.weibo-user-feed.xpath",
   "name": "Weibo User Feed",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Static JSON API mapping for m.weibo.cn user timelines. Entries are mblog cards filtered by card_type==9. Keeps the plugin id and uid parameter stable so installed user feeds can update in place.",
   "parameters": {
     "urlTemplate": "https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid=107603{uid}",
@@ -45,7 +45,22 @@
         "author": "mblog.user.screen_name",
         "image": "mblog.pics[0].large.url",
         "content": "mblog.text",
+        "detailContent": "mblog.text",
         "nextPage": "data.cardlistInfo.since_id",
+        "contentCleanup": [
+          {
+            "pattern": "(?is)<span\\s+class=\"url-icon\"[^>]*>.*?</span>",
+            "replacement": ""
+          },
+          {
+            "pattern": "(?is)<a\\s+href=\"https?://m\\.weibo\\.cn[^\"]*\">([^<]*)</a>",
+            "replacement": "$1"
+          },
+          {
+            "pattern": "(?is)<br\\s*/?\\s*>",
+            "replacement": "\n"
+          }
+        ],
         "customFields": [
           { "key": "username", "label": "用户名", "xpath": "mblog.user.screen_name", "scope": "item" },
           { "key": "avatarUrl", "label": "用户头像", "xpath": "mblog.user.profile_image_url", "scope": "item" },
@@ -53,7 +68,9 @@
           { "key": "reposts", "label": "转发", "xpath": "mblog.reposts_count", "scope": "item" },
           { "key": "comments", "label": "评论", "xpath": "mblog.comments_count", "scope": "item" },
           { "key": "likes", "label": "点赞", "xpath": "mblog.attitudes_count", "scope": "item" },
-          { "key": "source", "label": "来源", "xpath": "mblog.source", "scope": "item" }
+          { "key": "source", "label": "来源", "xpath": "mblog.source", "scope": "item" },
+          { "key": "retweetAuthor", "label": "转发作者", "xpath": "mblog.retweeted_status.user.screen_name", "scope": "item" },
+          { "key": "retweetText", "label": "转发原文", "xpath": "mblog.retweeted_status.text", "scope": "item" }
         ],
         "maxItems": 40
       }

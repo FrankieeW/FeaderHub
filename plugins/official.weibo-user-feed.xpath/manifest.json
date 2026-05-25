@@ -2,7 +2,7 @@
   "schemaVersion": "feader-plugin/v1",
   "id": "official.weibo-user-feed.xpath",
   "name": "Weibo User Feed",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "kind": "json-api-feed",
   "feaderApiVersion": "json-api-feed/v1",
   "description": "Fetch Weibo user timelines via m.weibo.cn JSON API with avatar, username, and multi-image field extraction. Uses the same plugin id and uid parameter for in-place updates.",
@@ -24,5 +24,5 @@
     }
   ],
   "maintainers": ["Frankie Wang"],
-  "sha256": "0c763653a6fa379192e708507e2223fa37a89a6dc26dfc978001ed82273850d7"
+  "sha256": "83b16d79336d4a22824ae30bb6e2b8a2e7719f526091cdb3610baab2810939c9"
 }

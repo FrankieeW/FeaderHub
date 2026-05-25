@@ -2,7 +2,7 @@
   "schemaVersion": "feader-view-plugin/v1",
   "id": "official.social-source-list.view",
   "name": "Social Source List View",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "slot": "source-list",
   "description": "A social-post style source queue with user avatars, usernames, compact metadata, and nine-image grids.",
   "capabilities": [
@@ -36,7 +36,20 @@
     "bindings": {
       "avatarUrl": ["avatarUrl", "authorAvatar", "user.avatarUrl"],
       "username": ["username", "author", "user.name"],
-      "imageGrid": ["images", "media", "attachments.images"]
+      "imageGrid": ["images", "media", "attachments.images"],
+      "publishedAt": ["publishedAt", "createdAt", "date", "timestamp"],
+      "socialMetadata": {
+        "reposts": ["reposts", "reposts_count", "retweet_count"],
+        "comments": ["comments", "comments_count", "reply_count"],
+        "likes": ["likes", "attitudes_count", "favorite_count"]
+      },
+      "customFields": ["source", "category", "section"],
+      "isRead": ["isRead", "isPinned"],
+      "actions": {
+        "repostUrl": ["repostUrl", "retweetUrl"],
+        "commentUrl": ["commentUrl", "replyUrl"],
+        "likeUrl": ["likeUrl", "favoriteUrl"]
+      }
     },
     "media": {
       "area": "media",
@@ -58,6 +71,12 @@
         "username": "微博用户",
         "avatarUrl": "https://github.com/FrankieeW.png",
         "summary": "Short update with fast metadata scanning.",
+        "publishedAt": "2026-05-25T12:00:00+08:00",
+        "reposts": 12,
+        "comments": 5,
+        "likes": 30,
+        "source": "iPhone 16 Pro",
+        "isRead": false,
         "images": [
           "https://picsum.photos/seed/feader-social-1/320/320",
           "https://picsum.photos/seed/feader-social-2/320/320",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "feader-registry/v1",
-  "updatedAt": "2026-05-25T00:00:00Z",
+  "updatedAt": "2026-06-12T00:00:00Z",
   "plugins": [
     {
       "id": "official.naixi-forum.xpath",
@@ -13,10 +13,10 @@
     {
       "id": "official.weibo-user-feed.xpath",
       "name": "Weibo User Feed",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "kind": "json-api-feed",
       "manifest": "plugins/official.weibo-user-feed.xpath/manifest.json",
-      "sha256": "0c763653a6fa379192e708507e2223fa37a89a6dc26dfc978001ed82273850d7"
+      "sha256": "83b16d79336d4a22824ae30bb6e2b8a2e7719f526091cdb3610baab2810939c9"
     },
     {
       "id": "official.editorial-ui.view",
@@ -61,10 +61,10 @@
     {
       "id": "official.social-source-list.view",
       "name": "Social Source List View",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "kind": "source-list-view",
       "manifest": "plugins/official.social-source-list.view/manifest.json",
-      "sha256": "4dce25f6013d6bd27201b7dcd72b5fbcbdad4ec404e060d16b6428ed0c0384c4"
+      "sha256": "7608977e0b83ae9fc0773c6d870d47c3a8d9961ba1ea6b8088d1844debf9660b"
     },
     {
       "id": "official.dense-radar-source-list.view",
