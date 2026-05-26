@@ -48,7 +48,13 @@
         "id": { "type": "string" },
         "title": { "type": "string" },
         "renderer": { "type": "string" },
-        "placement": { "type": "string" }
+        "placement": { "type": "string" },
+        "defaultWidth": { "enum": ["one-column", "two-column"] },
+        "allowedWidths": {
+          "type": "array",
+          "items": { "enum": ["one-column", "two-column"] },
+          "uniqueItems": true
+        }
       },
       "additionalProperties": false
     },

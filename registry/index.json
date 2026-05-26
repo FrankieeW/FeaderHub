@@ -21,10 +21,10 @@
     {
       "id": "official.rsshub-runtime.source",
       "name": "RSSHub Runtime",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "kind": "runtime-source-plugin",
       "manifest": "plugins/official.rsshub-runtime.source/manifest.json",
-      "sha256": "e133ac9320bc157c12ebf6233f0d3c5c4e13527a6b268ad1e6a4d734725ebbeb"
+      "sha256": "b1d3bb9eaa7c26120cc58e4734c97a0bbc4609809e90ef894453bdb3a2f675ce"
     },
     {
       "id": "official.editorial-ui.view",

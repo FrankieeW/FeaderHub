@@ -2,14 +2,14 @@
   "schemaVersion": "feader-plugin/v1",
   "id": "official.rsshub-runtime.source",
   "name": "RSSHub Runtime",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "kind": "runtime-source-plugin",
   "feaderApiVersion": "runtime-source-plugin/v1",
   "description": "Run RSSHub as an advanced local source runtime for routes that need npm, cookies, and optional Puppeteer support while keeping Feader Core on the normal RSS ingestion path.",
   "logo": "https://docs.rsshub.app/logo.png",
   "entry": "runtime-source-plugin.json",
   "permissions": {
-    "ui": ["settings-page"],
+    "ui": ["settings-page", "settings-card"],
     "storage": ["plugin-config"],
     "importExport": ["config"],
     "runtime": ["node-package", "local-port"],
@@ -28,5 +28,5 @@
     }
   ],
   "maintainers": ["Frankie Wang"],
-  "sha256": "e133ac9320bc157c12ebf6233f0d3c5c4e13527a6b268ad1e6a4d734725ebbeb"
+  "sha256": "b1d3bb9eaa7c26120cc58e4734c97a0bbc4609809e90ef894453bdb3a2f675ce"
 }

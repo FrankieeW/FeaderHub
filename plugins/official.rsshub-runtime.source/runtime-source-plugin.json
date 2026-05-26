@@ -2,7 +2,7 @@
   "schemaVersion": "runtime-source-plugin/v1",
   "id": "official.rsshub-runtime.source",
   "name": "RSSHub Runtime",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "runtime": {
     "engine": "node",
     "package": "rsshub",
@@ -28,7 +28,9 @@
     "id": "rsshub-runtime-card",
     "title": "RSSHub Runtime",
     "renderer": "rsshub-runtime",
-    "placement": "settings"
+    "placement": "settings",
+    "defaultWidth": "two-column",
+    "allowedWidths": ["two-column"]
   },
   "settingsPage": {
     "title": "RSSHub Runtime",
